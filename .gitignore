@@ -1,0 +1,9 @@
+node_modules/
+web-preview/dist/
+# Cocos Creator 生成目录
+client/library/
+client/temp/
+client/local/
+client/build/
+client/profiles/
+client/native/

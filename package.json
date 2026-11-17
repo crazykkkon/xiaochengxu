@@ -1,0 +1,20 @@
+{
+  "name": "last-oasis-tools",
+  "private": true,
+  "description": "开发工具：核心逻辑测试、自动模拟、浏览器预览、Cocos 代码类型检查",
+  "scripts": {
+    "test": "node --import tsx --test tests/*.test.ts",
+    "sim": "tsx tools/simulate.ts",
+    "preview:build": "esbuild web-preview/main.ts --bundle --outfile=web-preview/dist/main.js --format=iife --target=es2019",
+    "preview": "npm run preview:build && npx --yes http-server web-preview -p 8080 -c-1",
+    "typecheck": "tsc -p tsconfig.json --noEmit && tsc -p tsconfig.cocos.json --noEmit",
+    "check": "npm run typecheck && npm test"
+  },
+  "devDependencies": {
+    "@cocos/creator-types": "3.8.8",
+    "esbuild": "^0.28.0",
+    "tsx": "^4.20.0",
+    "typescript": "^5.9.0",
+    "@types/node": "^22.0.0"
+  }
+}

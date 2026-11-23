@@ -2,6 +2,9 @@
 
 这个仓库的默认分支是 `claude/steam-age-mini-program-jmovof`。《坠井者》的制作由 Codex 和 Claude 轮流接手，两边靠同一份交接稿对齐进度。
 
+## 分工
+- Codex 主要负责《坠井者》的美术，包括像素素材、场景表现、实机可读性和美术交接。
+
 ## 开工前必读
 1. 读 `docs/坠井者_Steam_Demo_单英雄20层_制作交接稿.docx` 全文（可以用 `pandoc 文件.docx -t markdown` 转成文字）。
 2. **特别看文末的《Claude 制作进度回报》**：Claude 做完了什么、东西放在哪、遇到的问题、需要制作人决定的事。
